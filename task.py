@@ -64,7 +64,7 @@ def updateLoop(colToUpdate = URLColumnSourceCard):
 				# Preparing to upload 
 				# print('URL to update', urlToUpdate)
 				fields = {colToUpdate: urlToUpdate}
-				airtable.update(rec_ofAsked, fields)
+				airtable_producer.update(rec_ofAsked, fields)
 
 updateLoop()
 
